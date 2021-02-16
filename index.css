@@ -1,0 +1,138 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  margin: 0;
+  margin-top: 3%;
+  text-align: center;
+  color: rgb(230, 230, 230);
+  background-color: black;
+  border-bottom: solid 1px white;
+}
+
+.header img {
+    margin: 0;
+    width: 100%;
+}
+
+.header h1 {
+    margin: 0%;
+    font-size: 140px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(48, 46, 46);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.side {
+  -ms-flex: 30%; 
+  flex: 30%;
+  background-color: #000000;
+  padding: 20px;
+  color: #ddd;
+  text-align: center;
+}
+
+
+.main {   
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  color: #ddd;
+  text-align: center;
+  border-left: solid 1px white;
+}
+
+.fakeimg {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+}
+
+.image1 {
+    background-image: url("https://cnet1.cbsistatic.com/img/csk7ELB1OjqanxXfyB3O01Si_1A=/1200x675/2019/05/24/88eaa6dd-0326-4504-b594-358c16111dea/alienware-m17-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px;
+    border-bottom: solid 1px white;
+}
+.image2 {
+    background-image: url("https://a-static.besthdwallpaper.com/computer-ram-wallpaper-2560x1600-12435_7.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px;
+    border-bottom: solid 1px white;
+}
+.image3 {
+    background-image: url("https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/m15_game.png");
+    background-repeat: no-repeat;
+    background-size: 350px;
+    border-bottom: solid 1px white
+}
+.image4 {
+    background-image: url("https://i.pinimg.com/originals/48/00/c3/4800c393923409295a18170249224da4.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px;
+}
+.image5 {
+    background-image: url("https://wallpapercave.com/wp/wp1981482.jpg");
+    background-size: 800px ;
+    background-repeat: no-repeat;
+}
+.image6{
+    background-image: url("https://cdn.arstechnica.net/wp-content/uploads/2018/08/geforce-rtx-2080-ti-social-1200x627-fb.jpg");
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
